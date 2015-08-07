@@ -8,9 +8,9 @@
     position: relative;
 }
 
-.owl-theme .owl-controls .item-link {
+.owl-theme .owl-controls .owl-page {
     position: relative;
-    display: block;
+    display: inline-block;
     width: 100px;
     height: 40px;
     margin: 0 2px;
@@ -18,14 +18,12 @@
     outline: none;
 }
 
-.owl-theme .owl-controls .item-link:focus {
-    -webkit-box-shadow: 0 0 8px #cc4895;
-    -moz-box-shadow: 0 0 8px #cc4895;
+.owl-theme .owl-controls .owl-page:focus {
     box-shadow: 0 0 8px #cc4895;
     outline: none;
 }
 
-.owl-theme .owl-controls .active .item-link {
+.owl-theme .owl-controls .owl-page.active  {
     border-bottom: 4px solid #cc4895;
 }
 
@@ -33,8 +31,8 @@
     display: none;
 }
 
-.owl-theme .prev-owl,
-.owl-theme .next-owl {
+.owl-theme .owl-prev,
+.owl-theme .owl-next {
     position: absolute;
     top: 5px;
     display: block;
@@ -45,17 +43,19 @@
     outline: none;
 }
 
-.owl-theme .prev-owl:focus,
-.owl-theme .next-owl:focus {
-    -webkit-box-shadow: 0 0 8px #cc4895;
-    -moz-box-shadow: 0 0 8px #cc4895;
+.owl-theme .owl-prev:focus,
+.owl-theme .owl-next:focus {
     box-shadow: 0 0 8px #cc4895;
 }
 
-.owl-theme .prev-owl {
-    left: 24px;
+.owl-theme .owl-prev {
+    left: .25em;
 }
 
-.owl-theme .next-owl {
-    right: 24px;
+.owl-theme .owl-next {
+    right: .25em;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev, .owl-theme .owl-controls .owl-buttons .owl-next {
+    font-size: 1.5em;
 }
